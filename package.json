@@ -1,0 +1,16 @@
+{
+  "name": "curso_cypress_entregafinal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "/curso_cypress_entregafinal/node_modules/.bin/cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
