@@ -1,21 +1,15 @@
 export class HomePage {
 
-    constructor (){
+    constructor() {
 
-    this.toDoListButton = '#todolistlink';
-    this.onlineShopButton ='#onlineshoplink'
- 
-
+        this.toDoListButton = '#todolistlink';
+        this.onlineShopButton = '#onlineshoplink'
     }
-
-
-    clickToDoListButton(){
-
+    clickToDoListButton() {
         cy.get(this.toDoListButton).click();
     }
 
-    clickonlineShopButton(){
-
+    clickonlineShopButton() {
         cy.get(this.onlineShopButton).click();
     }
 

@@ -1,27 +1,23 @@
 export class OnlineShopProducts {
+    constructor() {
 
-    constructor (){
-   
-    this.goShoppingCart = '#goShoppingCart';
-    this.closeModal='#closeModal';
+        this.goShoppingCart = '#goShoppingCart';
+        this.closeModal = '#closeModal';
 
     }
 
-    clickGoShoppingCart(){
+    clickGoShoppingCart() {
 
         cy.get(this.goShoppingCart).click();
     }
 
-    clickAddProducto(producto){
+    clickAddProducto(producto) {
 
-        cy.xpath (`//p[text()="${producto}"]//following-sibling::button[text()="Add to cart"]`).click();
+        cy.xpath(`//p[text()="${producto}"]//following-sibling::button[text()="Add to cart"]`).click();
     }
 
-    clickCloseModal()
-    {
+    clickCloseModal() {
         cy.get(this.closeModal).click()
 
     }
-
-
 }

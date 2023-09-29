@@ -1,20 +1,15 @@
-
 {
-  
-  "producto1":"Black T-Shirt",
+  "producto1": "Black T-Shirt",
   "productoprecio1": 15,
-  "producto2":"White Pants",
+  "producto2": "White Pants",
   "productoprecio2": 20,
-  "producto3":"Red Cap",
+  "producto3": "Red Cap",
   "productoprecio3": 10,
-  "producto4":"Black Jacket",
-  "producto5":"Pink Sweater",
-  "producto6":"White Shoes",
-  "producto7":"Beige Shorts",
-  "productoid1":"blacktshirt",  
-  "productoid2":"whitepants",
-  "productoid3":"redcup"
-
- 
-
+  "producto4": "Black Jacket",
+  "producto5": "Pink Sweater",
+  "producto6": "White Shoes",
+  "producto7": "Beige Shorts",
+  "productoid1": "blacktshirt",
+  "productoid2": "whitepants",
+  "productoid3": "redcup"
 }

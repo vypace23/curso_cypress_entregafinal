@@ -1,29 +1,22 @@
 export class OnlineShopShoppingCart {
 
-constructor (){
+  constructor() {
 
-  this.productoName= '#productName';
-  this.productoPrecio='#productPrice';
- 
-}
+    this.productoName = '#productName';
+    this.productoPrecio = '#productPrice';
 
-validarProducto(productofixtureparam){
+  }
 
+  validarProducto(productofixtureparam) {
+    cy.xpath(`//p[text()="${productofixtureparam}"]`).should('have.text', productofixtureparam)
 
-cy.xpath (`//p[text()="${productofixtureparam}"]`).should('have.text', productofixtureparam)
+  }
 
- 
-}
+  validarPrecio(productofixtureparam, preciofixtureparam) {
 
-validarPrecio(productofixtureparam, preciofixtureparam){
+    cy.xpath(`//p[text()="${productofixtureparam}"]`).siblings(this.productoPrecio).should('have.text', "$" + preciofixtureparam);
 
-
-cy.xpath (`//p[text()="${productofixtureparam}"]`).siblings(this.productoPrecio).should('have.text', "$"+ preciofixtureparam);
-
-    
-}
-
-
+  }
 
 }
 
